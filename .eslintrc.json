@@ -1,0 +1,21 @@
+{
+	"extends": "eslint:recommended",
+	"env": {
+		"node": true,
+		"es6": true
+	},
+	"parserOptions": {
+		"ecmaVersion": 2021
+	},
+	"rules": {
+		"comma-dangle": ["error", "always-multiline"],
+		"indent": ["error", 2],
+		"no-console": "off",
+		"no-empty-function": "error",
+		"no-trailing-spaces": ["error"],
+		"no-var": "error",
+		"prefer-const": "error",
+		"quotes": ["error", "single"],
+		"semi": ["error", "always"]
+	}
+}
