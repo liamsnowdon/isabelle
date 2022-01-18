@@ -6,6 +6,10 @@
   "repository": "https://github.com/liamsnowdon/isabelle-discord-bot.git",
   "author": "Liam Snowdon <snowdon.liam@gmail.com>",
   "license": "MIT",
+  "engines": {
+    "node": "16.8.0",
+    "yarn" : "1.22.17"
+  },
   "scripts": {
     "dev": "nodemon index.js",
     "start": "node index.js",

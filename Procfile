@@ -1,2 +1,2 @@
-release: npm run deploy-commands
-web: npm start
+release: yarn deploy-commands
+web: yarn start
