@@ -25,7 +25,7 @@ function createEmbed (villager) {
 }
 
 module.exports = {
-  schedule: '40 * * * *',
+  schedule: '50 * * * *',
 
   async execute (client) {
     const channel = client.channels.cache.get(process.env.CHANNEL_ID);
