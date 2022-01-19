@@ -6,6 +6,6 @@ module.exports = {
     .setDescription('Replies with island info!'),
 
   async execute(interaction) {
-    await interaction.reply(`Island name: ${interaction.guild.name}\nTotal members: ${interaction.guild.memberCount}`);
+    await interaction.reply(`Island name: ${interaction.guild.name}\nTotal residents: ${interaction.guild.memberCount}`);
   },
 };
