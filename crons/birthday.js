@@ -35,13 +35,17 @@ module.exports = {
     const day = date.getDate();
     const birthday = `${day}/${month}`;
 
-    const villager = villagers.find(v => v.birthday === birthday);
+    const filteredVillagers = villagers.filter(v => v.birthday === birthday);
 
-    if (villager) {
-      const embed = createEmbed(villager);
-      await channel.send({ embeds: [embed] });
-    } else {
-      await channel.send('No birthdays today.');
+    if (filteredVillagers.length > 0) {
+      filteredVillagers.forEach((villager) => {
+        const embed = createEmbed(villager);
+
+        channel.send({
+          content: `Today is ${villager.name['name-EUen']}'s birthday!`,
+          embeds: [embed],
+        });
+      });
     }
   },
 };
