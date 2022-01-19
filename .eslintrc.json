@@ -9,7 +9,7 @@
 	},
 	"rules": {
 		"comma-dangle": ["error", "always-multiline"],
-		"indent": ["error", 2],
+		"indent": ["error", 2, { "SwitchCase": 1 }],
 		"no-console": "off",
 		"no-empty-function": "error",
 		"no-trailing-spaces": ["error"],
