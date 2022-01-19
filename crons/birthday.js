@@ -6,7 +6,7 @@ const villagers = require('../data/villagers.json');
 function createEmbed (villager) {
   const wikiUrl = `https://animalcrossing.fandom.com/wiki/${villager.name['name-EUen']}`;
 
-  const exampleEmbed = new MessageEmbed()
+  const embed = new MessageEmbed()
     .setColor(villager['bubble-color'])
     .setTitle(`Happy Birthday, ${villager.name['name-EUen']}!`)
     .setDescription('Hope you have a great day!')
@@ -21,11 +21,11 @@ function createEmbed (villager) {
     )
     .setImage(villager.image_uri);
 
-  return exampleEmbed;
+  return embed;
 }
 
 module.exports = {
-  schedule: '50 * * * *',
+  schedule: '0 9 * * *',
 
   async execute (client) {
     const channel = client.channels.cache.get(process.env.CHANNEL_ID);
