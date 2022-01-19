@@ -1,5 +1,5 @@
 /**
- * Cron: Turnip End
+ * Cron: Turnip Sale End
  *
  * This cron runs every Sunday at 12PM when you can no longer buy turnips.
  */

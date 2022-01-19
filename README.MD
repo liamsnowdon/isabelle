@@ -3,10 +3,13 @@
 Isabelle is a Discord bot for Animal Crossing servers/channels, focusing on villager birthdays.
 
 ## Crons
-Isabelle supports scheduling tasks to run on the Discord server.
+Isabelle schedules tasks to run on the Discord server.
 
-### Birthday
-A cron that runs every morning that sends a message to a dedicated channel with villagers that have birthdays that day.
+### Morning
+Every morning Isabelle sends a general morning message and embeds with villagers that have birthdays that day.
+
+### Turnip Sale End
+Every Sunday at 12PM Isabelle will announce that the sale for buying turnips has ended for the day.
 
 ## Commands
 Isabelle comes fully equipped with useful commands using the `/command-name` syntax.
