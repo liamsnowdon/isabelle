@@ -7,7 +7,7 @@
 require('dotenv').config();
 
 module.exports = {
-  schedule: '* 12 * * Sunday',
+  schedule: '0 12 * * Sunday',
 
   async execute (client) {
     const channel = client.channels.cache.get(process.env.CHANNEL_ID);
